@@ -24,7 +24,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "6413573102:AAE2FlWmhq8S1vgo3usbV5moaQ7J_VO
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
-USE_CAPTION_FILTER = bool(environ.get('You Got Your Files', True))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/b0f72b06ccd7d68ef9e0b.jpg https://telegra.ph/file/51ab3fe8a41715d246777.jpg https://telegra.ph/file/64764b9e6df9d2d1162c7.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/64764b9e6df9d2d1162c7.jpg")
