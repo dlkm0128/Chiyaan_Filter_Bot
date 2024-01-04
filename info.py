@@ -100,11 +100,11 @@ NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = environ.get('pkfilterbot')
+    APP_NAME = environ.get('https://pkfilterbot-3444fab9421d.herokuapp.com/')
 else:
     ON_HEROKU = True
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'pkfilterbot'
+FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'https://pkfilterbot-3444fab9421d.herokuapp.com/'
 URL = "https://demo-gsmz.onrender.com".format(FQDN) if ON_HEROKU or NO_PORT else \
     "https://demo-gsmz.onrender.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
@@ -115,7 +115,7 @@ name = str(environ.get('name', 'LazyPrincess'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 if 'DYNO' in environ:
     ON_HEROKU = True
-    APP_NAME = str(getenv('pkfilterbot'))
+    APP_NAME = str(getenv('https://pkfilterbot-3444fab9421d.herokuapp.com/'))
 
 else:
     ON_HEROKU = False
