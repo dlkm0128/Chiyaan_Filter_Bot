@@ -23,9 +23,8 @@ API_HASH = environ.get('API_HASH', 'c216393ab439dd055858680916a3444b')
 BOT_TOKEN = environ.get('BOT_TOKEN', "6413573102:AAE2FlWmhq8S1vgo3usbV5moaQ7J_VO8RSo")
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
+CACHE_TIME = int(environ.get('CACHE_TIME', 500))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-
 PICS = (environ.get('PICS', 'https://telegra.ph/file/b0f72b06ccd7d68ef9e0b.jpg https://telegra.ph/file/51ab3fe8a41715d246777.jpg https://telegra.ph/file/64764b9e6df9d2d1162c7.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/64764b9e6df9d2d1162c7.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/b2e78c2273697a5b9f7b5.mp4")
