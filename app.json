@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/AK_Filter_Bot",
-    "repository": "https://github.com/AK_Filter_Bot",
+    "website": "https://github.com/Chiyaan_Filter_Bot",
+    "repository": "https://github.com/Chiyaan_Filter_Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
