@@ -18,25 +18,25 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '1397269319'))
-API_HASH = environ.get('API_HASH', 'c216393ab439dd055858680916a3444b')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6413573102:AAE2FlWmhq8S1vgo3usbV5moaQ7J_VO8RSo")
+API_ID = int(environ.get('API_ID', '27823209'))
+API_HASH = environ.get('API_HASH', '1d693fcf3bfea119ca1d9057b08a4495')
+BOT_TOKEN = environ.get('BOT_TOKEN', "6227161823:AAF99oGEu8bj--CvSMNilMFRt6Q7e1cCw1g")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 500))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/b0f72b06ccd7d68ef9e0b.jpg https://telegra.ph/file/51ab3fe8a41715d246777.jpg https://telegra.ph/file/64764b9e6df9d2d1162c7.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://graph.org/file/73d2cc1252aeaf6abc241.jpg https://graph.org/file/9f7d61dea7d2daf81ba89.jpg https://graph.org/file/e4829c94fbdddca624691.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/64764b9e6df9d2d1162c7.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/b2e78c2273697a5b9f7b5.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/51ab3fe8a41715d246777.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1397269319').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '1001902923509').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6004928770').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '1001903319666').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_channel = environ.get('-1001902923509')
+auth_channel = environ.get('-1001903319666')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -47,25 +47,25 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://akfilter:akfilter@cluster0.ewjrj0c.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hotstar:hotstar@cluster0.hco4xje.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'api.shareus.io')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'zQxv8e47a3fedRckrQCA2wWuvdA2')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+VERIFY = bool(environ.get('VERIFY', True))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
+SHORTLINK_API = environ.get('SHORTLINK_API', '1e7d4e20e77655f3d0de914127b5310cc4f093ca')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/akbotupdates')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/PK_LinkZz')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Howtodowloa/11')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Movies_Request_TR')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/TamilRockerz_TR')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/TamilRockerz_TR/150')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001740524004'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001908928408'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'akbotupdates')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
